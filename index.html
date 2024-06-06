@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel = "stylesheet" href="./style/css doc/styles.css">
+        <title>
+            JinDak PDX
+        </title>
+    </head>
+    <!-- at the top of page add: contacts[email, phone], Instagram link-->
+    <body>
+        <div class="container">
+            <div>
+                <h1 class="title_text"> JINDAK PDX</h1>
+                
+                <div class="buttons">
+                    <button class="btn" id = "MenuLink" onclick="Menu()">Menu</button>
+                    <script>
+                        function Menu(){
+                            window.location.href = "menu.html"
+                        }
+                    </script>
+                </div>
+            </div>
+            <!-- Links -->
+            <div class="buttons">
+                <button class="btn" id = "aboutLink" onclick="about()">About Us</button>
+                <button class="btn" id = "doorDashLink" onclick="doorDash()">Order Online</button>
+                <script>
+                    function about(){
+                        window.location.href = "aboutUs.html"
+                    }
+                    function doorDash(){
+                        window.location.href = "https://www.doordash.com/store/jin-dak-pdx-portland-27528553/"
+                    }
+                </script>
+            </div>
+            <div class="image_container">
+                <div>
+                    <img srcset="12px" = "./style/images/chicken.jpg" alt="chicken">
+                </div>
+                <div>
+                    <img srcset="12px" = "./style/images/bibimbap.jpg" alt="bibimbap">
+                </div>
+                <div>
+                    <img srcset="12px" = "./style/images/foodCart.jpg" alt="food cart">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
